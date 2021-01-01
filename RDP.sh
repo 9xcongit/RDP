@@ -6,12 +6,6 @@ sudo adduser 9xcongit sudo
 echo '9xcongit:8426' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
-sudo su
-apt-get update
-apt-get upgrade
-aptitude install bfgminer
-bfgminer -o http://pool:port -u username -p password
-bfgminer -o stratum+tcp://stratum.slushpool.com:3333 -u 9xcongit -p Steroids90
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
